@@ -233,3 +233,53 @@ a.thumb::after {
   .contact-section { flex-direction: column; align-items: flex-start; }
   .pickaxe { align-self: center; width: 120px; }
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.contact-form { max-width: 34rem; margin-top: 2rem; }
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #000000;
+  border: 3px solid #555555;
+  border-radius: 0;
+}
+.contact-form textarea { min-height: 7rem; resize: vertical; }
+.contact-form ::placeholder { color: #8b8b8b; opacity: 1; }
+.contact-form input:focus,
+.contact-form textarea:focus { border-color: #ffffff; outline: none; }
+
+.form-button {
+  padding: 0.7rem 1.75rem;
+  font: inherit;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #3f3f3f;
+  background: #6f6f6f;
+  border: 3px solid #000000;
+  box-shadow: inset 3px 3px 0 #a8a8a8, inset -3px -3px 0 #3d3d3d;
+  cursor: pointer;
+}
+.form-button:hover {
+  color: #ffffa0;
+  text-shadow: 3px 3px 0 #3f3f28;
+  background: #7b83c9;
+  border-color: #ffffff;
+  box-shadow: inset 3px 3px 0 #a9b0ef, inset -3px -3px 0 #4a4f8c;
+}
+.form-button:active { box-shadow: inset 3px 3px 0 #3d3d3d, inset -3px -3px 0 #a8a8a8; }
