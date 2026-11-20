@@ -25,6 +25,21 @@
   </div>
     <img class="pickaxe" src="pickaxe.gif" width="180" height="199" alt="">
     </section>
+    <section class="contact-form" aria-labelledby="form-heading">
+  <h2 id="form-heading">Send a message</h2>
+  <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+    <label class="visually-hidden" for="name">Your name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label class="visually-hidden" for="email">Your email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label class="visually-hidden" for="message">Your message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="form-button">Send Message</button>
+  </form>
+</section>
       <nav class="back" aria-label="Back navigation">
         <a href="index.html">&larr; Home</a>
       </nav>
